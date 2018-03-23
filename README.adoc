@@ -1,0 +1,14 @@
+= REACT组件 -- 弹出提示语
+
+== introduction
+
+* @class FlyTips
+* @extends {React.Component}
+* @intro 弹出提示语组件：每个提示语以滑入的动画展示，每次最多展示4个，其余会排队展示。
+
+== 接收父级的提示语列表
+
+componentWillReceiveProps
+
+* @param newProps [Object] 父级属性
+* @param newProps.list [Array] 提示语内容，格式示例：[{content:'ct', key: 21}]; 注意：内容必须为对象且要有key与content属性，key是唯一标志符号，content是文案；
